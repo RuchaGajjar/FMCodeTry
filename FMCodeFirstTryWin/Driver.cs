@@ -21,6 +21,14 @@ namespace FMCodeFirstTryWin
         /// Empty contructor - actually no need
         /// </summary>
         public Driver() { }
+
+        /// <summary>
+        /// New Constructor
+        /// </summary>
+        /// <param name="FName">First name of driver</param>
+        /// <param name="LName">last name driver</param>
+        public Driver(string FName, string LName)
+        { }
                 
         /// <summary>
         /// Get all driver details - select query
