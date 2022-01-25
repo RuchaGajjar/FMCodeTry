@@ -13,9 +13,9 @@ namespace FMCodeFirstTryWin
     public class Driver
     {
         //Const query and commands
-        const string connectionString = "Integrated Security = SSPI; Initial Catalog = test_sql1; Data Source = AKLSQLP01";
-        const string sqlSelect = "Select FirstName+' '+LastName [Customer Name], DateOfBirth [Date of Birth], (Case When IsNull(LicenseFilePath,'') = '' Then 'No' Else 'Yes' End) [ID Provided] From [dbo].[DRIVERS]";
-        const string sqlInsert = "Insert into [dbo].[DRIVERS] Values (@FirstName,@LastName,@DateOfBirth,@BirthCountry,@LicenseNumber,@LicenseDate,@LicenseFilePath)";
+        const string connectionString = @"Integrated Security = SSPI; Initial Catalog = Rucha_Test; Data Source = RTD-MAIN\SQLEXPRESS";
+        const string sqlSelect = "Select FName+' '+LName [Customer Name], DOB [Date of Birth], (Case When IsNull(Photopath,'') = '' Then 'No' Else 'Yes' End) [ID Provided] From [dbo].[Customer_Details]";
+        const string sqlInsert = "Insert into [dbo].[Customer_Details] Values (@FirstName,@LastName,@DateOfBirth,@BirthCountry,@LicenseNumber,@LicenseDate,@LicenseFilePath)";
 
         /// <summary>
         /// Empty contructor - actually no need
